@@ -27,8 +27,12 @@ body, html {
 .w3-bar .w3-button {
   padding: 16px;
 }
-</style>
-<body>
+.fourths-height {
+  display: table;
+}
+.fourths {
+  display: table-cell;
+}
 
 @media screen and (max-width: 481px){
 
@@ -40,6 +44,11 @@ body, html {
      font-size: 100%;
 }
 }
+
+</style>
+<body>
+
+
 
 <!-- Links (sit on top) -->
 <div class="w3-top">
@@ -83,34 +92,41 @@ body, html {
   </div>
 </div>
 
-   <!-- Grid -->
+
+
+
+
   <div class="w3-row w3-container" id="services">
     <div class="w3-center w3-padding-64">
       <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">What We Offer</span>
     </div>
-    <div class="w3-col l3 m6 w3-light-grey w3-container w3-padding-16">
+
+<div class="fourths-height">
+    <div class="w3-col l3 m6 w3-light-grey w3-container w3-padding-16 fourths">
       <h3>Microblading</h3>
       <p> Microblading is a semi-permanent cosmetic tattooing treatment that fills in sparse eyebrows. The… </p> <a href="#micro" class="w3-button w3-black">Learn More</a>
     </div>
 
-    <div class="w3-col l3 m6 w3-grey w3-container w3-padding-16">
+    <div class="w3-col l3 m6 w3-grey w3-container w3-padding-16 fourths">
       <h3>Eyeliner</h3>
       <p> Eyeliner tattoo: Permanent makeup, enhancements. colors appear and vivid. Healing time is…</p>
 <a href="#eyeliner" class="w3-button w3-black">Learn More</a>
     </div>
 
-    <div class="w3-col l3 m6 w3-dark-grey w3-container w3-padding-16">
+    <div class="w3-col l3 m6 w3-dark-grey w3-container w3-padding-16 fourths">
       <h3>Lips</h3>
       <p> Lip tattoos are meant to enhance lips, not create actual fullness. It's possible to get a color that’s close…</p>
 <a href="#lips" class="w3-button w3-black">Learn More</a>
     </div>
 
-    <div class="w3-col l3 m6 w3-black w3-container w3-padding-16">
+    <div class="w3-col l3 m6 w3-black w3-container w3-padding-16 fourths">
       <h3>Eyebrows</h3>
       <p>Semi-permanent makeup is the application of pigment to the eyebrows, eyes, lips, or other…</p>
 <a href="#eyebrows" class="w3-button w3-black">Learn More</a>
     </div>
   </div>
+</div>
+
 
 
 
