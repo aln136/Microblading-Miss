@@ -31,24 +31,30 @@ body, html {
   z-index: 1;
 }
 
-.w3-bar .w3-button {
-  padding: 16px;
+.button {
+  border:none;
+  display:inline-block;
+  padding:8px 16px;
+  vertical-align:middle;
+  overflow:hidden;
+  text-decoration:none;
+  color:inherit;
+  background-color:inherit;
+  text-align:center;
+  cursor:pointer;
+  white-space:nowrap
 }
-.fourths-height {
-  display: table;
-}
-.fourths {
-  display: table-cell;
-}
+
 
 @media screen and (max-width: 481px){
 
-  body {
-     padding: 0px;
+  .button {
+     padding:8px 10px; !important;
      font-size: 100%;
      width: 100%;
 }
 }
+
 </style>
 <body>
 
