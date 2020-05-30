@@ -24,6 +24,12 @@ body, html {
   background-image: url("photos/home.png");
   min-height: 100%;
 }
+.top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
 
 .w3-bar .w3-button {
   padding: 16px;
@@ -41,9 +47,6 @@ body, html {
      padding: 0px;
      font-size: 100%;
 }
-  .w3-top {
-     width: 100%;
-}
 }
 </style>
 <body>
@@ -51,7 +54,7 @@ body, html {
 
 
 <!-- Links (sit on top) -->
-<div class="w3-top">
+<div class="top">
   <div class="w3-row w3-large w3-light-grey">
     <div class="w3-col s3">
       <a href="/" class="w3-button w3-block">Home</a>
