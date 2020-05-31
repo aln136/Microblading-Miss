@@ -8,8 +8,8 @@
 <style>
 html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
 .mySlides {display:none}
-.w3-tag, .fa {cursor:pointer}
-.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+.tag, .fa {cursor:pointer}
+.tag {height:15px;width:15px;padding:0;margin-top:6px}
 
 body, html {
   height: 100%;
@@ -24,10 +24,10 @@ body, html {
   min-height: 100%;
 }
 
-.w3-bar .w3-button {
+.bar .button {
   padding: 16px;
 }
-.w3-row-padding img {
+.row-padding img {
   margin-bottom: 12px
 }
 
@@ -75,19 +75,19 @@ body, html {
 
 
 <!-- Links (sit on top) -->
-<div class="w3-top">
-  <div class="w3-row large w3-light-grey">
-    <div class="w3-col s3">
-      <a href="/" class="w3-button w3-block">Home</a>
+<div class="top">
+  <div class="row large light-grey">
+    <div class="col s3">
+      <a href="/" class="button block">Home</a>
     </div>
-    <div class="w3-col s3">
-      <a href="pictures.htm" class="w3-button w3-block">Photos</a>
+    <div class="col s3">
+      <a href="pictures.htm" class="button block">Photos</a>
     </div>
-    <div class="w3-col s3">
-      <a href="/#services" class="w3-button w3-block">Services</a>
+    <div class="col s3">
+      <a href="/#services" class="button block">Services</a>
     </div>
-    <div class="w3-col s3">
-      <a href="/#contact" class="w3-button w3-block">Contact</a>
+    <div class="col s3">
+      <a href="/#contact" class="button block">Contact</a>
     </div>
   </div>
 </div>
@@ -95,8 +95,8 @@ body, html {
 
 
 <!-- Header with full-height image -->
-<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-display-left w3-text-white" style="padding:5%">
+<header class="bgimg-1 display-container grayscale-min" id="home">
+  <div class="display-left text-white" style="padding:5%">
     <span class="jumbo">Microblading Design Studio</span><br>
 <br>
     <span class="xlarge">Flushing, NY.</span>
@@ -107,10 +107,10 @@ body, html {
 <br>
 <h1><center> Photos </center></h1>
 
-<div class="w3-content" style="max-width:1500px">
+<div class="content" style="max-width:1500px">
 
-<div class="w3-row-padding" style="margin-bottom:128px">
-  <div class="w3-third">
+<div class="row-padding" style="margin-bottom:128px">
+  <div class="third">
 	<img src="photos/M4.png" width="100%">
 	<img src="photos/M3.png" width="100%">
 	<img src="photos/M7.png" width="100%">
@@ -118,7 +118,7 @@ body, html {
 	<img src="photos/M10.png" width="100%">
   </div>
 
-  <div class="w3-third">
+  <div class="third">
 	<img src="photos/home.png" width="100%">
 	<img src="photos/M6.png" width="100%">
 	<img src="photos/M2.png" width="100%">
@@ -126,7 +126,7 @@ body, html {
 	<img src="photos/M1.png" width="100%">
 	<img src="photos/M9.png" width="100%">
   </div>
-  <div class="w3-third">
+  <div class="third">
 	<img src="photos/Eyebrows.png" width="100%">
 	<img src="photos/M12.png" width="100%">
 	<img src="photos/M13.png" width="100%">
@@ -139,9 +139,9 @@ body, html {
 
 <!-- Footer -->
 <br>
-<footer class="w3-container w3-padding-32 w3-light-grey">
- <div class="w3-center">
-  <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+<footer class="container padding-32 light-grey">
+ <div class="center">
+  <a href="#" class="button black margin"><i class="fa fa-arrow-up margin-right"></i>To the top</a>
 <p>Copyright © 2020 Eyebrow Design Studio All rights reserved</p>
 </div>
   </footer>
@@ -169,10 +169,10 @@ function showDivs(n) {
     x[i].style.display = "none";  
   }
   for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-white", "");
+    dots[i].className = dots[i].className.replace(" white", "");
   }
   x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-white";
+  dots[slideIndex-1].className += " white";
 }
 </script>
 
