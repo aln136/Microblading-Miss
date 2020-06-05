@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+
+<style>
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+  width: 100%;
+  font-family:palatino;
+}
+
+
+h1 {
+	font-family: "Montserrat", sans-serif;
+}
+
+p {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 20px;
+}
+
+
+a:link,a:visited,a:hover,a:active {
+  text-decoration: none;
+}
+
+.questionfont {
+	font-family: "Montserrat", sans-serif;
+}
+
+.answerfont {
+	font-family: 'Quicksand', sans-serif;
+
+}
+
+
+.z {
+	z-index: 1;
+}
+
+
+</style>
+<body>
+
+
+
+
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<nav class="sidebar white animate-right xxlarge" style="display:none;padding-top:100px;right:0;z-index:2" id="mySidebar">
+
+  <a href="javascript:void(0)" onclick="closeNav()" class="button text-grey xxlarge display-topright hover-white" style="padding:0 12px;">Close</a>
+	<div class="bar-block center">
+		<a href="#" class="bar-item button text-grey hover-white" 				onclick="closeNav()">Home</a>
+		<a href="/#services" class="bar-item button text-grey hover-white" 			onclick="closeNav()">Services</a>
+		<a href="/#contact" class="bar-item button text-grey hover-white" 			onclick="closeNav()">Contact</a>
+		<a href="pictures" class="bar-item button text-grey hover-white" 			onclick="closeNav()">Photos</a>
+		<a href="FAQ" class="bar-item button text-grey hover-white" 				onclick="closeNav()">FAQ</a>
+		<a href="Book" class="bar-item button text-grey hover-white" 				onclick="closeNav()">Book</a>
+	</div>
+</nav>
+
+
+
+  <span class="button top text-light-grey xxlarge hover-text-white hover-none" style="width:auto;right:0;" onclick="openNav()">Menu</span>
+
+
+
+
+<!-- Header with full-height image -->
+<header class="display-container content wide" style="max-width:1500px;min-width:500px">
+	<img class="image" src="photos/homepage.png"width="1600" height="800">
+
+</header>
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="container padding-32 light-grey">
+	<div class="center">
+ 		<a href="#" class="button black margin"><i class="fa fa-arrow-up margin-		right"></i>To the top</a>
+		<p>Copyright © 2020 Eyebrow Design Studio All rights reserved
+		<br>Designed and Powered by <a href="mailto:ali@representative.com">Ali@representative.com</a></p>
+	</div>
+</footer>
+
+
+
+
+<script>
+// Open and close sidebar
+function openNav() {
+  document.getElementById("mySidebar").style.width = "30%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+
+
+
+</body>
+</html>
