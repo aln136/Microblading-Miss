@@ -80,23 +80,28 @@ a:link,a:visited,a:hover,a:active {
 
 
 
-<!-- Links (sit on top) -->
-<div class="top">
-  <div class="row large light-grey">
-    <div class="col s3">
-      <a href="/" class="button block">Home</a>
-    </div>
-    <div class="col s3">
-      <a href="pictures" class="button block">Photos</a>
-    </div>
-    <div class="col s3">
-      <a href="FAQ" class="button block">FAQ</a>
-    </div>
-    <div class="col s3">
-      <a href="Book" class="button block">Book</a>
-    </div>
-  </div>
-</div>
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<nav class="sidebar white animate-right xxlarge" style="display:none;padding-top:100px;right:0;z-index:2" id="mySidebar">
+
+  <a href="javascript:void(0)" onclick="closeNav()" class="button text-grey xxlarge display-topright hover-white" style="padding:0 12px;">Close</a>
+	<div class="bar-block center">
+		<a href="#" class="bar-item button text-grey hover-white" 				onclick="closeNav()">Home</a>
+		<a href="/#services" class="bar-item button text-grey hover-white" 			onclick="closeNav()">Services</a>
+		<a href="/#contact" class="bar-item button text-grey hover-white" 			onclick="closeNav()">Contact</a>
+		<a href="pictures" class="bar-item button text-grey hover-white" 			onclick="closeNav()">Photos</a>
+		<a href="FAQ" class="bar-item button text-grey hover-white" 				onclick="closeNav()">FAQ</a>
+		<a href="Book" class="bar-item button text-grey hover-white" 				onclick="closeNav()">Book</a>
+	</div>
+</nav>
+
+  <span class="button top text-white hover-text-grey xxlarge hover-white" style="width:auto;right:0; background-color:#B6968E; opacity:60%;" onclick="openNav()">Menu</span>
+
+
+
+
+
+
+
 
 
 
@@ -163,6 +168,21 @@ a:link,a:visited,a:hover,a:active {
 		<br>Designed and Powered by <a 								href="mailto:ali@representative.com">Ali@representative.com</a></p>
 	</div>
 </footer>
+
+
+
+
+<script>
+// Open and close sidebar
+function openNav() {
+  document.getElementById("mySidebar").style.width = "100%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
 
 
 </body>
