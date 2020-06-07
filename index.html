@@ -159,6 +159,7 @@ a:link,a:visited,a:hover,a:active {
 		<a href="/" class="bar-item button text-grey hover-white" 				onclick="closeNav()">Home</a>
 		<a href="book" class="bar-item button text-grey hover-white" 				onclick="closeNav()">Book</a>
 		<a href="FAQ" class="bar-item button text-grey hover-white" 				onclick="closeNav()">FAQ</a>
+		<a href="pictures" class="bar-item button text-grey hover-white" 			onclick="closeNav()">Photos</a>
 		<a href="safety" class="bar-item button text-grey hover-white" 				onclick="closeNav()">Safety</a>
 		<a href="/#contact" class="bar-item button text-grey hover-white" 			onclick="closeNav()">Contact</a>
 		<a href="/#services" class="bar-item button text-grey hover-white" 			onclick="closeNav()">Services</a>
@@ -273,26 +274,6 @@ For clients who want a more natural look, the eyeliner will just enhance the bas
 </div><hr>
 
 
-
-
-
-<div class="content section" style="max-width:600px; max-height:auto">
-	<h1 class="center"><span class="bottombar border-dark-grey">Gallery</span></h1>
-	<img class="mySlides animate-fading" src="photos/M4.png" style="width:100%">
-	<img class="mySlides animate-fading" src="photos/M8.png" style="width:100%">
-	<img class="mySlides animate-fading" src="photos/M12.png" style="width:100%">
-	<img class="mySlides animate-fading" src="photos/M14.png" style="width:100%">
-	<img class="mySlides animate-fading" src="photos/M2.png" style="width:100%">
-	<img class="mySlides animate-fading" src="photos/M3.png" style="width:100%">
-	<img class="mySlides animate-fading" src="photos/M5.png" style="width:100%">
-	<img class="mySlides animate-fading" src="photos/M10.png" style="width:100%">
-	<img class="mySlides animate-fading" src="photos/M7.png" style="width:100%">
-	<img class="mySlides animate-fading" src="photos/home.png" style="width:100%">
-	<img class="mySlides animate-fading" src="photos/M13.png" style="width:100%">
-	<img class="mySlides animate-fading" src="photos/M6.png" style="width:100%">
-	<img class="mySlides animate-fading" src="photos/M11.png" style="width:100%">
-</div>
-<hr>
 
 
 
@@ -451,25 +432,6 @@ function closeNav() {
 }
 </script>
 
-
-
-
-<script>
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 9000);    
-}
-</script
 
 
 
