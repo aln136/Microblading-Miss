@@ -64,8 +64,18 @@ a:link,a:visited,a:hover,a:active {
 
 .bgimg {
 	border-radius:25%;
-	}
+}
 
+.halves {
+	width:100%;
+}
+
+
+@media only screen and (min-width: 1050px) {
+	.halves {
+	width: 49.99999%;
+	}
+}
 
 
 
@@ -85,7 +95,6 @@ a:link,a:visited,a:hover,a:active {
 	margin:0 auto;
 	}
 }
-
 
 
 
@@ -165,15 +174,15 @@ a:link,a:visited,a:hover,a:active {
 
 <!-- Heading -->
 <div class="content smallscreenpadding" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
-<div class="half smallscreentext center padding-small">
+<div class="halves center padding-small left">
 	<h1 class="title">Achieve Effortless Beauty</h1>
 	<p><b>Discover the secret to waking up flawless every morning with microblading and permanent eyeliner. Get started on your journey today, with Jessie to guide you every step of the way.</b></p>
 	<p><a href="book" class="button black">Book Appointment</a></p>
 </div>
 
 <!-- Header with full-height image -->
-    <div class="col m6 padding-small">
-      <img class="bgimg image round-large" src="photos/Eyebrows.png" alt="Microblading" width="700" height="394">
+    <div class="padding-small">
+      <img class="bgimg image halves right" src="photos/Eyebrows.png" alt="Microblading" width="700" height="394" align="right">
     </div>
 </div>
 
