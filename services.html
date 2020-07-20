@@ -60,6 +60,16 @@ a:link,a:visited,a:hover,a:active {
   background-color: #31353e;
 }
 
+.header {
+	background-color: #373c48;
+}
+
+.vcenter {
+	display: table-cell;
+        height: 245px;
+        padding: 10px;
+	vertical-align: middle;
+}
 
 </style>
 <head>
@@ -140,22 +150,11 @@ a:link,a:visited,a:hover,a:active {
 
 
 <!-- Header with full-height image -->
-<header class="display-container content wide" style="max-width:100%;margin-top:48px;">
-	<img class="image" src="photos/homepage.png"width="100%">
-</header>
-
-<div class="content" style="margin-top:80px;margin-bottom:80px">
-
-
-
-
-
-<div class="row container questionfont">
-	<div class="center padding-64">
-		<span class="xlarge bottombar border-dark-grey padding-16 xxlarge questionfont">Services</span>
-	</div>
+<div class="header display-container content wide" style="max-width:100%;height:245px;margin-top:48px;">
+	<center><h1 class="center vcenter text-white">Services</h1></center>
 </div>
 
+<div class="content" style="margin-top:80px;margin-bottom:80px">
 
 
 
@@ -235,10 +234,9 @@ For clients who want a more natural look, the eyeliner will just enhance the bas
 
 
 <!-- Footer -->
-<br>
-<footer class="container padding-32 light-grey">
+<center><a href="#" class="button black margin center">To the top</a></center>
+<footer class="container padding-32 header text-white">
 	<div class="center">
- 		<a href="#" class="button black margin"><i class="fa fa-arrow-up margin-		right"></i>To the top</a>
 		<p>Copyright © 2020 Eyebrow Design Studio All rights reserved
 		<br>Designed and Powered by <a href="mailto:ali@representative.com">Ali@representative.com</a></p>
 	</div>
