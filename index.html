@@ -12,12 +12,6 @@
 
 
 
-<link rel="stylesheet" href="cope.css" type="text/css" media="all">
-<link rel="stylesheet" href="xstyle.css" type="text/css" media="all">
-
-
-
-
 <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
@@ -49,6 +43,17 @@ a:link,a:visited,a:hover,a:active {
   text-decoration: none;
 }
 
+.et_parallax_bg{
+	background-repeat:no-repeat;
+	background-position:top;
+	background-size:cover;
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	height:100%;
+	display:block
+}
 
 .questionfont {
 	font-family: "Montserrat", sans-serif;;
@@ -116,7 +121,7 @@ a:link,a:visited,a:hover,a:active {
 .box {
   max-width: 90%;
   position: absolute;
-  top: 5%;
+  bottom: 10%;
   left: 5%;
   right: 5%;
   padding-left: 20px;
@@ -143,7 +148,7 @@ a:link,a:visited,a:hover,a:active {
 	.boxsmall {
 	position: absolute;
 	width: 50%;
-	top: 20%;
+	bottom: 20%;
 	left: 25%;
 	right: 25%;
 	padding-left: 20px;
@@ -240,14 +245,12 @@ a:link,a:visited,a:hover,a:active {
 </nav>
 
 
-
-
 <div class="top topnav">
-  <span class="button text-white hover-text-white large hover-none" style="width:auto;left:0;" onclick="openNav()">Menu</span>
+	<span class="button text-white hover-text-white large hover-none" style="width:auto;left:0;" onclick="openNav()">Menu</span>
 
-  <span class="button text-white hover-text-white large hover-none right" style="width:auto;left:0;"><a href="https://www.google.com/maps/place/Microblading+Eyebrow+Design+Studio/data=!3m1!4b1!4m2!3m1!1s0x89c2600f9581923b:0xe1fb8b1a087e1e92" target="_blank" itemprop="hasMap">Directions</a></span>
+	<span class="button text-white hover-text-white large hover-none right" style="width:auto;left:0;"><a href="https://www.google.com/maps/place/Microblading+Eyebrow+Design+Studio/data=!3m1!4b1!4m2!3m1!1s0x89c2600f9581923b:0xe1fb8b1a087e1e92" target="_blank" itemprop="hasMap">Directions</a></span>
 
-  <span class="button text-white hover-text-white large hover-none right" style="width:auto;left:0;"><a href="tel:347-768-6999">Call</a></span>
+	<span class="button text-white hover-text-white large hover-none right" style="width:auto;left:0;"><a href="tel:347-768-6999">Call</a></span>
 </div>
 
  
@@ -273,9 +276,9 @@ a:link,a:visited,a:hover,a:active {
 
 
 
-<section class="headersmall et_pb_module et_pb_section_parallax" style="min-height: 640px;">
+<section class="headersmall display-container" style="min-height: 640px;">
 
-<span class="et_parallax_bg_wrap"><span class="et_parallax_bg et_pb_parallax_css" style="background-image: url(photos/home.png);"></span></span>
+<span class="et_parallax_bg parallax" style="background-image: url(photos/home.png);"></span>
 
 <div class="box boxsmall center black container opacity-min">
 		<h2>Achieve Effortless Beauty</h2>
