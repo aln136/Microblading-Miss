@@ -43,7 +43,7 @@ a:link,a:visited,a:hover,a:active {
   text-decoration: none;
 }
 
-.et_parallax_bg{
+.parallax_bg{
 	background-repeat:no-repeat;
 	background-position:top;
 	background-size:cover;
@@ -70,6 +70,9 @@ a:link,a:visited,a:hover,a:active {
 }
 
 
+.lobster {
+	font-family: lobster;
+}
 
 .z {
 	z-index:1;
@@ -119,13 +122,9 @@ a:link,a:visited,a:hover,a:active {
 }
 
 .box {
-  max-width: 90%;
-  position: absolute;
-  bottom: 10%;
-  left: 5%;
-  right: 5%;
-  padding-left: 20px;
-  padding-right: 20px;
+	position: absolute;
+	bottom: 40%;
+	right: 5%;
 }
 
 
@@ -147,10 +146,8 @@ a:link,a:visited,a:hover,a:active {
 @media only screen and (min-width: 800px) {
 	.boxsmall {
 	position: absolute;
-	width: 50%;
-	bottom: 20%;
-	left: 25%;
-	right: 25%;
+	bottom:35%;
+	right: 10%;
 	padding-left: 20px;
 	padding-right: 20px;
 	}
@@ -287,12 +284,11 @@ a:link,a:visited,a:hover,a:active {
 
 <section class="headersmall display-container" style="min-height: 640px;">
 
-<span class="et_parallax_bg parallax" style="background-image: url(photos/home.png);"></span>
+<span class="parallax_bg parallax" style="background-image: url(photos/home.png);"></span>
 
-<div class="box boxsmall center black container opacity-min">
-		<h2>Achieve Effortless Beauty</h2>
-		<p><b>Discover the secret to waking up flawless every morning with microblading and permanent eyeliner. Get started on your journey today, with Jessie to guide you every step of the way.</b></p>
-	<p><a href="book" class="button light-grey">Get Started</a></p>
+<div class="box boxsmall container text-white right-align">
+		<h2 class="lobster xxxlarge">Achieve Effortless Beauty</h2>
+	<p><a href="book" class="button light-grey">BOOK NOW</a></p>
 </div>		
 </section>
 
