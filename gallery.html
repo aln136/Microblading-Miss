@@ -58,6 +58,13 @@ a:link,a:visited,a:hover,a:active {
   background-color: #31353e;
 }
 
+.imgcenter {
+	display: inline-block;
+	position: relative;
+	left: 50%;
+	transform: translateX(-150%);
+}
+
 .header {
 	background-color: #373c48;
 }
@@ -80,7 +87,7 @@ a:link,a:visited,a:hover,a:active {
 <head>
 
 
-<title>Photos | Microblading Eyebrow Design Studio</title>
+<title>Gallery | Microblading Eyebrow Design Studio</title>
 <meta name="description" content="Before & fter pictures, client results, eyebrow styles"/>
 
 
@@ -124,28 +131,41 @@ a:link,a:visited,a:hover,a:active {
 
 
 <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
-<nav class="top sidebar white animate-left xxlarge" style="display:none;padding-top:50px;right:0;z-index:2" id="mySidebar">
+<nav class="answerfont top sidebar white animate-left xlarge" style="display:none;padding-top:45px;right:0;z-index:2" id="mySidebar">
 
-  <a href="javascript:void(0)" onclick="closeNav()" class="button text-grey xxlarge display-topleft hover-white" style="padding:0 12px;">Close</a>
+  <a href="javascript:void(0)" onclick="closeNav()" class="button text-grey xlarge display-topleft hover-white" style="padding:0 12px;">Close</a>
 	<div class="bar-block center">
 		<a href="/" class="bar-item button text-grey hover-white" 				onclick="closeNav()">Home</a>
 		<a href="book" class="bar-item button text-grey hover-white" 				onclick="closeNav()">Book</a>
-		<a href="FAQ" class="bar-item button text-grey hover-white" 				onclick="closeNav()">FAQ</a>
-		<a href="pictures" class="bar-item button text-grey hover-white" 			onclick="closeNav()">Photos</a>
+		<a href="gallery" class="bar-item button text-grey hover-white" 			onclick="closeNav()">Gallery</a>
 		<a href="safety" class="bar-item button text-grey hover-white" 				onclick="closeNav()">Safety</a>
 		<a href="contact" class="bar-item button text-grey hover-white" 			onclick="closeNav()">Contact</a>
-		<a href="services" class="bar-item button text-grey hover-white" 			onclick="closeNav()">Services</a>
 		<a href="chinese" class="bar-item button text-grey hover-white" 			onclick="closeNav()">中文</a>
+
+    <div class="dropdown-hover">
+      <h3 class="center button white text-grey hover-white hover-text-black answerfont">Services <i class="fa fa-angle-down"></i></h3> 
+      <div class="center dropdown-content bar-block card-2 text-grey white large">
+        <a href="microblading" class="bar-item button hover-white hover-text-black">Microblading</a>
+        <a href="ombre-brows" class="bar-item button hover-white hover-text-black">Ombre Brows</a>
+        <a href="combo-brows" class="bar-item button hover-white hover-text-black">Combo Brows</a>
+        <a href="eyeliner" class="bar-item button hover-white hover-text-black">Eyeliner</a>
+        <a href="prices" class="bar-item button hover-white hover-text-black">Prices</a>
+      </div>
+    </div>
+
 	</div>
 </nav>
 
 
-<div class="top topnav">
-  <span class="button text-white hover-text-white large hover-none" style="width:auto;left:0;" onclick="openNav()">Menu</span>
 
-  <span class="button text-white hover-text-white large hover-none right" style="width:auto;left:0;"><a href="https://www.google.com/maps/place/Microblading+Eyebrow+Design+Studio/data=!3m1!4b1!4m2!3m1!1s0x89c2600f9581923b:0xe1fb8b1a087e1e92" target="_blank" itemprop="hasMap">Directions</a></span>
+<div class="top topnav answerfont">
+	<span class="button text-white hover-text-white large hover-none" onclick="openNav()">Menu</span>
 
-  <span class="button text-white hover-text-white large hover-none right" style="width:auto;left:0;"><a href="tel:347-768-6999">Call</a></span>
+	<img src="icon2.png" style="height:45px" class="imgcenter">
+
+	<span class="button text-white hover-text-white large hover-none right" style="width:auto;left:0;"><a href="https://www.google.com/maps/place/Microblading+Eyebrow+Design+Studio/data=!3m1!4b1!4m2!3m1!1s0x89c2600f9581923b:0xe1fb8b1a087e1e92" target="_blank" itemprop="hasMap">Directions</a></span>
+
+	<span class="button text-white hover-text-white large hover-none right" style="width:auto;left:0;"><a href="tel:347-768-6999">Call</a></span>
 </div>
 
 
@@ -156,7 +176,7 @@ a:link,a:visited,a:hover,a:active {
 
 <!-- Header with full-height image -->
 <div class="header display-container content wide" style="max-width:100%;height:245px;margin-top:48px;">
-	<center><h1 class="center vcenter text-white">Photos</h1></center>
+	<center><h1 class="center vcenter text-white">Gallery</h1></center>
 </div>
 
 

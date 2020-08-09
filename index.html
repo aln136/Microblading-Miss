@@ -110,6 +110,13 @@ a:link,a:visited,a:hover,a:active {
   background-color: #31353e;
 }
 
+.imgcenter {
+	display: inline-block;
+	position: relative;
+	left: 50%;
+	transform: translateX(-150%);
+}
+
 .header {
 	background-color: #373c48;
 }
@@ -231,25 +238,37 @@ a:link,a:visited,a:hover,a:active {
 
 
 <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
-<nav class="top sidebar white animate-left xxlarge" style="display:none;padding-top:50px;right:0;z-index:2" id="mySidebar">
+<nav class="answerfont top sidebar white animate-left xlarge" style="display:none;padding-top:45px;right:0;z-index:2" id="mySidebar">
 
-  <a href="javascript:void(0)" onclick="closeNav()" class="button text-grey xxlarge display-topleft hover-white" style="padding:0 12px;">Close</a>
+  <a href="javascript:void(0)" onclick="closeNav()" class="button text-grey xlarge display-topleft hover-white" style="padding:0 12px;">Close</a>
 	<div class="bar-block center">
 		<a href="/" class="bar-item button text-grey hover-white" 				onclick="closeNav()">Home</a>
 		<a href="book" class="bar-item button text-grey hover-white" 				onclick="closeNav()">Book</a>
-		<a href="FAQ" class="bar-item button text-grey hover-white" 				onclick="closeNav()">FAQ</a>
-		<a href="pictures" class="bar-item button text-grey hover-white" 			onclick="closeNav()">Photos</a>
+		<a href="gallery" class="bar-item button text-grey hover-white" 			onclick="closeNav()">Gallery</a>
 		<a href="safety" class="bar-item button text-grey hover-white" 				onclick="closeNav()">Safety</a>
 		<a href="contact" class="bar-item button text-grey hover-white" 			onclick="closeNav()">Contact</a>
-		<a href="services" class="bar-item button text-grey hover-white" 			onclick="closeNav()">Services</a>
 		<a href="chinese" class="bar-item button text-grey hover-white" 			onclick="closeNav()">中文</a>
+
+    <div class="dropdown-hover">
+      <h3 class="center button white text-grey hover-white hover-text-black answerfont">Services <i class="fa fa-angle-down"></i></h3> 
+      <div class="center dropdown-content bar-block card-2 text-grey white large">
+        <a href="microblading" class="bar-item button hover-white hover-text-black">Microblading</a>
+        <a href="ombre-brows" class="bar-item button hover-white hover-text-black">Ombre Brows</a>
+        <a href="combo-brows" class="bar-item button hover-white hover-text-black">Combo Brows</a>
+        <a href="eyeliner" class="bar-item button hover-white hover-text-black">Eyeliner</a>
+        <a href="prices" class="bar-item button hover-white hover-text-black">Prices</a>
+      </div>
+    </div>
+
 	</div>
 </nav>
 
 
 
 <div class="top topnav answerfont">
-	<span class="button text-white hover-text-white large hover-none" style="width:auto;left:0;" onclick="openNav()">Menu</span>
+	<span class="button text-white hover-text-white large hover-none" onclick="openNav()">Menu</span>
+
+	<img src="icon2.png" style="height:45px" class="imgcenter">
 
 	<span class="button text-white hover-text-white large hover-none right" style="width:auto;left:0;"><a href="https://www.google.com/maps/place/Microblading+Eyebrow+Design+Studio/data=!3m1!4b1!4m2!3m1!1s0x89c2600f9581923b:0xe1fb8b1a087e1e92" target="_blank" itemprop="hasMap">Directions</a></span>
 
@@ -261,15 +280,8 @@ a:link,a:visited,a:hover,a:active {
 
 
 
-<div style="margin-top:45px" class="center">
-	<img src="icon.png">
-</div>
-
-
-
-
 <!-- Heading -->
-<div class="content smallscreenpadding" style="max-width:1300px;">
+<div class="content smallscreenpadding" style="max-width:1300px;margin-top:45px;">
 <div class="center padding-small">
 	<h1 class="title">Microblading Eyebrow Design Studio</h1>
 	<div class="text-grey">
@@ -340,21 +352,21 @@ a:link,a:visited,a:hover,a:active {
 	<div class="third center">
 		<h2>Microblading</h2>
 		<p>Getting perfectly symmetrical and well-defined eyebrows every single day without an inch of effort isn’t done with magic. It’s done with microblading.
-		<p><a href="services" class="button black">Tell Me More</a></p>
+		<p><a href="microblading" class="button black">Tell Me More</a></p>
 		<img src="photos/M2.png" class="bgimg simg" style="width:68%">
 	</div>
 
 	<div class="third center">
 		<h2>Permanent Eyeliner</h2>
 		<p>Enhance your eyes and bring your eyeliner game to a whole new level. Never get them smudged again, because this eyeliner is completely waterproof.</p>
-		<p><a href="services" class="button black">Tell Me More</a></p>
+		<p><a href="eyeliner" class="button black">Tell Me More</a></p>
 		<img src="photos/Eyeliner.jpg" class="bgimg simg" style="width:70%">
 	</div>
 
 	<div class="third center">
-		<h2>Ombre Powder Brows</h2<h2>
+		<h2>Ombre Brows</h2<h2>
 		<p>Similar to microblading, you’ll get beautiful eyebrows that look completely natural - which technique is better suited for you?</p>
-		<p><a href="services" class="button black">Tell Me More</a></p>
+		<p><a href="ombre-brows" class="button black">Tell Me More</a></p>
 		<img src="photos/M33.jpg" class="bgimg" style="width:70%">
 	</div>
 </div>
@@ -379,7 +391,7 @@ a:link,a:visited,a:hover,a:active {
 
 <div class="content margins" style="max-width:1000px;">
 <h2 class="center">Photos</h2>
-<p class="center"><a href="pictures" class="button black">View All</a></p>
+<p class="center"><a href="gallery" class="button black">View All</a></p>
 	<div class="container center">
 	<img style="width:30%" src="photos/M4.png">
 	<img style="width:30%" src="photos/M8.png">
