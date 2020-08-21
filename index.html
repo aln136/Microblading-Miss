@@ -159,6 +159,11 @@ a:link,a:visited,a:hover,a:active {
 	width:40% !important;
 }
 
+.newsletter_box {
+	text-align:center;
+	
+}
+
 .vbottom {
 	background-color: #FEB6AF;
 }
@@ -565,9 +570,44 @@ a:link,a:visited,a:hover,a:active {
 <center><a href="#" class="button black margin center">To the top</a></center>
 </div>
 
-<footer class="container padding-32 header text-white">
 
+
+<footer class="container padding-32 header text-white">
 <div class="padding-small content">
+
+
+
+<center>
+<div class="newsletter_box padding-large card-4" style="margin-bottom:40px; width:70%">
+	<h3 class="questionfont" id="news_heading">Exclusive Offers in your inbox</h3>
+	<h3 class="questionfont" id="news_heading2" style="display:none">Welcome Aboard!</h3>
+	<p id="news_p">Subscribe today to receive special discounts and permanent makeup stories available to only our subscribers</p>
+	<p id="news_p2" style="display:none">Thanks for subscribing and joining our community.</p>
+	<form name="newsletter" id="newsletter" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSdr9MKgyScjXg7_GRIiysj49mZu25JK-GZ-4womJKVwXUp5sg/formResponse?" target="news_target" onsubmit="submitted=true;">
+	<input type="text" name="entry.923565566" id="entry.923565566" placeholder="Enter your email">
+	<input type="submit" value="Submit">
+	</form>
+</div>
+</center>
+
+	<iframe name="news_target" id="news_target" style="display:none;" onload="if(submitted) {}"></iframe>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">var submitted=false;</script>
+<script type="text/javascript">
+$('#newsletter').on('submit', function(e) {
+  $('#newsletter *').fadeOut(100);
+  $('#news_heading').fadeOut(100);
+  document.getElementById("news_heading2").style.display = "block";
+  $('#news_p').fadeOut(1000);
+  document.getElementById("news_p2").style.display = "block";
+  });
+</script>
+
+
+
+
+
 	<div class="padding third">
 		<span class="xlarge bottombar border-light-grey padding-16 questionfont">Contact</span>
 		<br><br>
