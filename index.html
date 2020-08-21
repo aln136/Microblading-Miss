@@ -586,6 +586,7 @@ a:link,a:visited,a:hover,a:active {
 	<form name="newsletter" id="newsletter" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSdr9MKgyScjXg7_GRIiysj49mZu25JK-GZ-4womJKVwXUp5sg/formResponse?" target="news_target" onsubmit="submitted=true;">
 	<input type="email" name="entry.923565566" id="entry.923565566" placeholder="Enter your email">
 	<input type="submit" value="Subscribe">
+	<p id="terms" class="small text-light-grey">By clicking "Subscribe", you agree to receive emails from our newsletter</p>
 	</form>
 </div>
 </center>
@@ -601,6 +602,7 @@ $('#newsletter').on('submit', function(e) {
   document.getElementById("news_heading2").style.display = "block";
   $('#news_p').fadeOut(1000);
   document.getElementById("news_p2").style.display = "block";
+  $('#news_terms').fadeOut(100);
   });
 </script>
 
